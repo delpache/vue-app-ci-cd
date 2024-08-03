@@ -2,8 +2,7 @@ name: Vue App, Build, Test and Deploy
 
 on:
 
-  schedule:
-    - cron: "*/2 * * * *"
+  workflow_dispatch:
 
 jobs:
   build:
