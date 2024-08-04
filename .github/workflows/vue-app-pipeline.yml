@@ -1,7 +1,6 @@
 name: Vue App, Build, Test and Deploy
 
 on:
-
   workflow_dispatch:
 
 jobs:
@@ -22,3 +21,6 @@ jobs:
 
       - name: Build du Project
         run: npm run build
+
+      - name: Test du Project
+        run: npm run test
