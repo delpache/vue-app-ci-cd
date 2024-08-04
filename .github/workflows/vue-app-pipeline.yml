@@ -1,11 +1,7 @@
 name: Vue App, Build, Test and Deploy
 
 on:
-
   workflow_dispatch:
-
-  schedule:
-    - cron: "*/2 * * * *"
 
 jobs:
   build:
@@ -21,7 +17,10 @@ jobs:
           node-version: 18.x
 
       - name: Installation des dépendances
-        run: npm i
+        run: npm install
 
       - name: Build du Project
         run: npm run build
+
+      - name: Test du Project
+        run: npm run test
